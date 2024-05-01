@@ -1,10 +1,11 @@
-//Serveless function used in production
-//Basically the same as the express server but serveless✨ (I have no idea what that means  )
+//Serveless✨ function to fetch vehicle data from the API
 
-import { api } from "./mockData.mjs";
-export default async function handler(req, res) {
-  const query = req.query;
-  const regNumber = query.regNumber;
+import { api } from "../mockData.mjs";
+
+export default async function vehicleHandler(req, res) {
+  //   const params = req.url;
+  const { VRN } = req.query;
+  const regNumber = VRN;
   const response = await fetch(process.env.API_URL, {
     method: "POST",
     headers: {
