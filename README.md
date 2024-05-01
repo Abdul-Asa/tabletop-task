@@ -48,7 +48,11 @@ npm run start
 
 - I spun up a proxy server using express. I didn't want to call a protected endpoint from the frontend.
 - Also to avoid CORS errors. 
-- I realised a bunch of VRN codes in the API example weren't working 🫤 ({ reg: "AA19PPP" },{ reg: "L2WPS" },{reg: "AA19SRN" },{reg: "AA19EEE"}).
+- I realised a bunch of VRN codes in the API example weren't working 🫤
+  - AA19PPP
+  - L2WPS
+  - AA19SRN
+  - AA19EEE
 - I made a mock data file by copying the VRN data from [here](https://developer-portal.driver-vehicle-licensing.api.gov.uk/apis/vehicle-enquiry-service/mock-responses.html#ves-api-test-environment).
 - It first checks the original api, then if it fails, fallbacks on the mock one.
 - I then modified the index.html & style.css a bit for styling.
