@@ -6,6 +6,8 @@ async function start() {
   Garage.add({ reg: "AA19AMP" });
   Garage.add({ reg: "AA19MOT" });
 
+  toggleLoading();
+
   const add_btn = document.getElementById("search-button");
   const input = document.getElementById("search");
   const carState = await getAllData(); // The state of the cars in the garage
@@ -28,6 +30,7 @@ async function start() {
 
   renderCount(carState);
   renderCarData(carState);
+  toggleLoading();
 }
 
 // Fetch all data for cars in garage
@@ -149,4 +152,10 @@ function renderCount(data) {
   } else {
     countElement.textContent = `${data.length} cars`;
   }
+}
+// toggle loading spinner
+function toggleLoading() {
+  const loadingElement = document.getElementById("loading");
+  loadingElement.style.display =
+    loadingElement.style.display === "none" ? "block" : "none";
 }

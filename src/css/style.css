@@ -146,6 +146,13 @@ h2 {
   cursor: not-allowed;
 }
 
+#loading {
+  text-align: center;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
 @media (max-width: 768px) {
   .main {
     grid-template-columns: repeat(2, 1fr);
@@ -171,5 +178,10 @@ h2 {
 
   #search {
     width: 50%;
+  }
+
+  #loading {
+    font-size: 1.4rem;
+    padding: 40px;
   }
 }
