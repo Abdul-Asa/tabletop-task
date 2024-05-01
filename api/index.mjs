@@ -14,8 +14,8 @@ router.get("/", (_, res) => {
   });
 });
 
-router.get("/vehicle/:regNumber", async (req, res) => {
-  const { regNumber } = req.params;
+router.get("/vehicle", async (req, res) => {
+  const { regNumber } = req.query;
   const response = await fetch(process.env.API_URL, {
     method: "POST",
     headers: {

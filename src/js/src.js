@@ -55,7 +55,7 @@ async function fetchCarData(reg) {
     process.env.NODE_ENV === "production"
       ? "/api/vehicle"
       : "http://localhost:3000/api/vehicle";
-  const response = await fetch(`${baseUrl}/${reg}`, {
+  const response = await fetch(`${baseUrl}?regNumber=${reg}`, {
     method: "GET",
     mode: "cors",
     headers: {
