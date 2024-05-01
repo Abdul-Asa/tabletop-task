@@ -54,6 +54,6 @@ npm run start
 - I then modified the index.html & style.css a bit for styling
 - Input bar is accesible 😌
 - Fixd the bugs in Garage.js. Added two helpful functions
-- I decided to host on vercel. Had issues uploading the express server so I just made a vrcel function 'vehicles' that does the eexact same thing.
-- I updateed the src on which endpoint to point to during prod vs dev mode
+- I decided to host on vercel. Had issues uploading the express server so I just made a vercel function 'vehicles' that does the eexact same thing.
+- I updated the src on which endpoint to point to during prod vs dev mode
 - 👍🏾 Pretty challenging project. I haven't used vanilla js in a while. This project reminded why. (Nextjs 💯)
