@@ -1,6 +1,6 @@
 //Serveless✨ function to fetch vehicle data from the API
 
-import { api } from "../mockData.mjs";
+import { api } from "./_mockData.mjs";
 
 export default async function vehicleHandler(req, res) {
   //   const params = req.url;
