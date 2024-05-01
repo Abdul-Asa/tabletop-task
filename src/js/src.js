@@ -153,7 +153,8 @@ function renderCount(data) {
     countElement.textContent = `${data.length} cars`;
   }
 }
-// toggle loading spinner
+
+// toggle loading
 function toggleLoading() {
   const loadingElement = document.getElementById("loading");
   loadingElement.style.display =

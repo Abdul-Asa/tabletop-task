@@ -46,12 +46,13 @@ npm run start
 
 ## Points 🌟
 
-- I tried calling the DVLA api from the src.js directly but met with cors error. (I knew the task wouldnt be that easy)
+- I tried calling the DVLA api from the src.js directly but met with cors error. (I knew the task wouldn't be that easy)
 - I spun up a proxy server using express to query the endpoint.
 - I realised a bunch of VRN codes in the API example weren't working 🫤
 - I made a mock data file by copying the VRN data from [here](https://developer-portal.driver-vehicle-licensing.api.gov.uk/apis/vehicle-enquiry-service/mock-responses.html#ves-api-test-environment).
 - It first checks the original api, then if it fails, fallbacks on the mock one.
 - I then modified the index.html & style.css a bit for styling
+- Input bar is accesible 😌
 - Fixd the bugs in Garage.js. Added two helpful functions
 - I decided to host on vercel. Had issues uploading the express server so I just made a vrcel function 'vehicles' that does the eexact same thing.
 - I updateed the src on which endpoint to point to during prod vs dev mode
