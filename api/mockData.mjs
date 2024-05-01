@@ -1,3 +1,4 @@
+//DVLA API isnt working for all thee codes so I have to use the mock data
 export const api = [
   {
     registrationNumber: "AA19AAA",

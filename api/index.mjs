@@ -1,3 +1,4 @@
+//standard express server to handle the api requests
 import express, { Router } from "express";
 import cors from "cors";
 import "dotenv/config";

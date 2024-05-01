@@ -1,3 +1,6 @@
+//Serveless function used in production
+//Basically the same as the express server but serveless✨ (I have no idea what that means  )
+
 import { api } from "./mockData.mjs";
 export default async function handler(req, res) {
   const query = req.query;
