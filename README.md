@@ -5,11 +5,11 @@
 This is a project integrating with DVLA API to show information about stored cars.
 Link is : https://tabletop-task.vercel.app/ .
 Some VRNS you can test it with:
-AA19DSL
-AA19MOT
-AA19AMP
-AA19 (Not in mock data)
-WN67DSO (Not in mock data)
+- AA19DSL
+- AA19MOT
+- AA19AMP
+- AA19 (Not in mock data)
+- WN67DSO (Not in mock data)
 
 ## Installation 📦
 
