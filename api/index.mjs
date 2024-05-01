@@ -6,15 +6,7 @@ const app = express();
 
 app.use(cors()); // Use cors middleware
 
-const router = Router();
-
-router.get("/", (_, res) => {
-  res.json({
-    message: "Hello from express!",
-  });
-});
-
-router.get("/vehicle/:regNumber", async (req, res) => {
+app.use("/vehicle/:regNumber", async (req, res) => {
   const { regNumber } = req.params;
   const response = await fetch(process.env.API_URL, {
     method: "POST",
@@ -39,10 +31,10 @@ router.get("/vehicle/:regNumber", async (req, res) => {
   res.json(data);
 });
 
-app.use("/api", router);
-
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Server is running on port ${process.env.PORT || 3000}`);
-});
+if (process.env.NODE_ENV != "production") {
+  app.listen(process.env.PORT || 3000, () => {
+    console.log(`Server is running on port ${process.env.PORT || 3000}`);
+  });
+}
 
 export default app;
