@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "webpack serve --mode development --env development",
-    "dev": "nodemon ./api/index.mjs",
+    "dev:server": "nodemon ./api/index.mjs",
     "build": "webpack --mode production --env production"
   },
   "keywords": [],
