@@ -150,7 +150,8 @@ h2 {
   text-align: center;
   background: black;
   color: white;
-  padding: 10px;
+  font-size: 1.4rem;
+  padding: 40px;
 }
 
 @media (max-width: 768px) {
@@ -178,10 +179,5 @@ h2 {
 
   #search {
     width: 50%;
-  }
-
-  #loading {
-    font-size: 1.4rem;
-    padding: 40px;
   }
 }
