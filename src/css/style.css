@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100svh;
+  height: 100vh;
   margin: 0;
   font-family: monospace;
   background-color: #fff;
@@ -19,22 +19,13 @@ ul {
   list-style: none;
 }
 
-ul a {
+ul a,
+a {
   color: inherit;
   text-decoration: none;
   font-size: 1.2rem;
   margin-right: 20px;
   transition: color 0.3s ease;
-}
-
-a {
-  position: relative;
-  color: #000;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #000;
 }
 
 a::before {
@@ -90,7 +81,8 @@ h1 {
   align-items: start;
 }
 
-.button_wrap button {
+.button_wrap button,
+#search-button {
   padding: 10px 20px;
   font-size: 1rem;
   border: none;
@@ -102,7 +94,8 @@ h1 {
   transition: background-color 0.3s ease;
 }
 
-.button_wrap button:hover {
+.button_wrap button:hover,
+#search-button:hover {
   background-color: #444;
 }
 
@@ -121,24 +114,8 @@ h1 {
   outline: none;
 }
 
-#search-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  background-color: #000;
-  color: #fff;
-  cursor: pointer;
-  margin-left: 10px;
-  border-radius: 0px;
-  transition: background-color 0.3s ease;
-}
-
 h2 {
   text-align: center;
-}
-
-#search-button:hover {
-  background-color: #444;
 }
 
 #search-button:disabled {
@@ -161,11 +138,9 @@ h2 {
   nav {
     padding: 10px 20px;
   }
-
   h1 {
     font-size: 1.2rem;
   }
-
   ul a {
     font-size: 0.9rem;
   }
@@ -176,7 +151,6 @@ h2 {
     grid-template-columns: repeat(1, 1fr);
     padding: 40px;
   }
-
   #search {
     width: 50%;
   }

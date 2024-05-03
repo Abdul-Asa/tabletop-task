@@ -8,8 +8,8 @@ async function start() {
 
   toggleLoading();
 
-  const add_btn = document.getElementById("search-button");
-  const input = document.getElementById("search");
+  const add_btn = document.querySelector("#search_button");
+  const input = document.querySelector("#search");
   const carState = await getAllData(); // The state of the cars in the garage
 
   add_btn.addEventListener("click", () => handleSearch(input.value, carState));
@@ -97,7 +97,7 @@ function handleSearch(input, list) {
 
 // Render car data
 function renderCarData(data) {
-  const parentDiv = document.getElementById("root");
+  const parentDiv = document.querySelector("#root");
   parentDiv.innerHTML = "";
 
   for (const car of data) {
@@ -142,7 +142,7 @@ function renderCarData(data) {
 
 // Render count of cars
 function renderCount(data) {
-  const countElement = document.getElementById("count");
+  const countElement = document.querySelector("#count");
   if (data.length === 0) {
     countElement.textContent = "No cars";
     return;
@@ -156,7 +156,7 @@ function renderCount(data) {
 
 // toggle loading
 function toggleLoading() {
-  const loadingElement = document.getElementById("loading");
+  const loadingElement = document.querySelector("#loading");
   loadingElement.style.display =
     loadingElement.style.display === "none" ? "block" : "none";
 }
