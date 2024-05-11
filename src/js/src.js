@@ -8,7 +8,7 @@ async function start() {
 
   toggleLoading();
 
-  const add_btn = document.querySelector("#search_button");
+  const add_btn = document.querySelector("#search-button");
   const input = document.querySelector("#search");
   const carState = await getAllData(); // The state of the cars in the garage
 
@@ -100,9 +100,10 @@ function renderCarData(data) {
   const parentDiv = document.querySelector("#root");
   parentDiv.innerHTML = "";
 
-  for (const car of data) {
+  for (const [index, car] of data.entries()) {
     const itemDiv = document.createElement("div");
     itemDiv.className = "item";
+    itemDiv.style.transitionDelay = `${index * 100}ms`;
 
     const itemViewDiv = document.createElement("div");
     itemViewDiv.className = "item_view";
@@ -138,6 +139,13 @@ function renderCarData(data) {
 
     parentDiv.appendChild(itemDiv);
   }
+  setTimeout(() => {
+    const items = document.querySelectorAll(".item");
+    for (const item of items) {
+      item.style.opacity = "1";
+      item.style.transform = "translateY(0)";
+    }
+  }, 100);
 }
 
 // Render count of cars

@@ -1,4 +1,4 @@
-//DVLA API isnt working for all thee codes so I have to use the mock data
+//DVLA API isnt working for all thee codes so I have to use the mock data as a backup
 export const api = [
   {
     registrationNumber: "AA19AAA",
