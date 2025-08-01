@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "./../css/style.css";
 import "./src.js";
 

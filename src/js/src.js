@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Garage } from "./garage";
 window.addEventListener("garage-loaded", start, false);
 

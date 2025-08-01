@@ -1,5 +1,5 @@
 //Serveless✨ function to fetch vehicle data from the API
-
+// @ts-nocheck
 import { api } from "./_mockData.mjs";
 
 export default async function vehicleHandler(req, res) {
